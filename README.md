@@ -26,3 +26,35 @@ The system performs the following actions:
 | `Switch` | Outputs `1` if obstacle is near, else `0` |
 | `Scope` | Displays warning signal output over time |
 
+🧰 Required Blocks
+From Workspace – input signal
+
+Compare To Constant – comparison (<= 0.5)
+
+Switch – outputs 1 or 0
+
+Two Constant blocks – values 1 and 0
+
+Scope – view output
+
+🛠️ Simulation Settings
+Stop Time: 7.5
+
+Solver: Fixed-step
+
+Solver Type: Discrete (no continuous states)
+
+📈 Expected Output
+The Scope will display a binary signal:
+
+0: when the vehicle is far (> 0.5m)
+
+1: when the vehicle is too close (≤ 0.5m)
+
+🗂️ Files
+File	Description
+ultrasonic_parking_assist.slx	Main Simulink model
+README.md	Project documentation
+MATLAB workspace variables	Define input signals before running model
+
+
